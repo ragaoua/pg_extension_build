@@ -10,4 +10,6 @@ COPY ./src /workspace
 
 WORKDIR /workspace
 
-CMD [ "/workspace/build_extension.sh" ]
+RUN ./build_extension.sh
+
+CMD [ "bash" ]
